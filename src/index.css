@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  :root {
+    /* Colores de fondo y texto */
+    --gradient-from: 210 40% 97%; /* similar a slate-100 */
+    --gradient-via: 220 30% 94%;  /* similar a slate-200 */
+    --gradient-to: 210 40% 97%;   /* similar a slate-100 */
+
+    --foreground: 222.2 47.4% 11.2%;
+    /*HEADER*/
+    --header-background: hsl(0, 0%, 100%); /* blanco */
+    --header-border: hsl(214, 32%, 91%); /* slate-200 */
+    --header-text: hsl(215, 27%, 37%);   /* slate-700 */
+    --header-text-hover: hsl(214, 32%, 91%); /* slate-200 */
+    /* Colores de circulo hero section */
+    --gradient-from-circle: hsl(0, 0%, 100%);     /* blanco */
+    --gradient-via-circle: hsl(210, 40%, 96%);    /* slate-100 */
+    --gradient-to-circle: hsl(210, 40%, 96%);     /* slate-100 */
+    --text-gradient-from: hsl(215, 20%, 65%); /* slate-500 */
+    --text-gradient-to: hsl(215, 27%, 37%);   /* slate-700 */
+    /* Colores de la pestaña hero */
+    --hero-tab:hsl(214, 32%, 91%);
+    --tab-back:hsl(0, 0%, 100%);
+    --tab-text:hsl(222, 47%, 11%);
+    /* Colores de texto, badge y botones hero */
+    --badge-from:hsl(215, 25%, 27%); /* slate-800 */
+    --badge-to:hsl(222, 47%, 11%);   /* slate-900 */
+    --title-hero-from:hsl(222, 47%, 11%); /* slate-900 */
+    --title-hero-to:hsl(215, 25%, 27%);   /* slate-800 */
+    --title-hero-via:hsl(215, 27%, 37%);  /* slate-700 */
+    --title2-hero-from:hsl(215, 27%, 37%); /* slate-700 */
+    --title2-hero-to:hsl(222, 47%, 11%);   /* slate-900 */
+    --description-hero:--title2-hero-from:hsl(215, 27%, 37%); /* slate-700 */
+    --button-hero-from:hsl(215, 27%, 37%);  /* slate-700 */
+    --button-hero-to:hsl(222, 47%, 11%);    /* slate-900 */
+    --button-hero-hover-from:hsl(215, 25%, 27%);   /* slate-800 */
+    --button-hero-hover-to:hsl(229, 84%, 5%); /* slate-950 */
+    --button2-hero-border:hsl(213, 27%, 84%); /* slate-300 */
+    --button2-hero-text:hsl(215, 27%, 37%);  /* slate-700 */
+    --button2-hero-hover:hsl(210, 40%, 96%); /* slate-100 */
+    --icon-background:hsl(0, 0%, 80%);
+    --icon-border:hsl(214, 32%, 91%);
+    /*SECCION PROYECTOS*/
+    /*Titulo y subtitulo*/
+    --title-text:hsl(215, 19%, 35%);
+    --card-background-from:hsl(222, 47%, 11%);    /* slate-900 */
+    --card-background-to:hsl(215, 27%, 37%);  /* slate-700 */
+    --cards-background:hsl(0, 0%, 100%);
+    --cards-border:hsl(214, 32%, 91%);
+    --cards-border-hover:hsl(213, 27%, 84%); /* slate-300 */
+    --card-tittle:hsl(222, 47%, 11%);    /* slate-900 */
+    --card-group-hover:hsl(215, 27%, 37%);  /* slate-700 */
+    --card-description:hsl(215, 19%, 35%); /* slate-600 */
+    --cart-tech-background:hsl(210, 40%, 96%); /* slate-100 */
+    --card-tech-text:hsl(215, 27%, 37%);  /* slate-700 */
+    --card-tech-color:hsl(214, 32%, 91%);
+
+    /*CONTACTO*/
+    --contact-label:hsl(215, 19%, 35%); /* slate-600 */
+    --contact-placeholder-background:hsl(0, 0%, 50%);  
+    --contact-placeholder-text:hsl(222, 47%, 11%);    /* slate-900 */
+    --contact-placeholder-focus:hsl(215, 16%, 47%);    /* slate-900 */
+    --contact-placeholder:hsl(215, 20%, 65%);    /* slate-900 */
+    --contact-border:hsl(214, 32%, 91%); /* slate-200 */
+
+    /*FOOTER*/
+    --footer-border:hsl(214, 32%, 91%); /* slate-200 */
+
+        --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Colores de fondo y texto */
+    --gradient-from: 222 47% 11%;   /* similar a slate-900 */
+    --gradient-via: 270 60% 20%;    /* similar a purple-900 */
+    --gradient-to: 222 47% 11%;     /* similar a slate-900 */
+
+    --foreground: 210 40% 98%;
+    /*HEADER*/
+    --header-background: hsl(0, 0%, 0%); 
+    --header-border: hsl(0, 0%, 10%); 
+    --header-text: hsl(0, 0%, 100%); /* blanco */
+    --header-text-hover: hsl(0, 0%, 10%); /* blanco */
+    /* Colores de circulo hero section */
+    --gradient-from-circle: hsl(222, 11%, 15%);   /* gray-800 */
+    --gradient-via-circle: hsl(222, 47%, 11%);    /* gray-900 */
+    --gradient-to-circle: hsl(222, 47%, 11%); 
+    --text-gradient-from: hsl(185, 95%, 62%); /* cyan-500 */
+    --text-gradient-to: hsl(271, 91%, 65%);   /* purple-500 */
+    /* Colores de la pestaña hero */
+    --hero-tab:hsl(217, 33%, 17%);
+    --tab-back:hsl(215, 25%, 27%);
+    --tab-text:hsl(0, 0%, 100%);
+    /* Colores de texto, badge y botones hero */
+    --badge-from:hsl(185, 95%, 62%); /* cyan-500 */
+    --badge-to:hsl(271, 91%, 65%);   /* purple-500 */
+    /* Colores de texto, badge y botones hero */
+    --title-hero-from:hsl(0, 0%, 100%); /* white*/
+    --title-hero-via:hsl(186, 94%, 82%);   /* cyan-200 */
+    --title-hero-to:hsl(269, 100%, 92%);  /* purple-200 */
+    --title2-hero-from:hsl(188, 86%, 53%); /* cyan-400 */
+    --title2-hero-to:hsl(270, 95%, 75%);   /* purple-400 */
+    --description-hero:hsl(216, 12%, 84%); /* gray-300 */
+    --button-hero-from:hsl(185, 95%, 62%); /* cyan-500 */
+    --button-hero-to:hsl(271, 91%, 65%);   /* purple-500 */
+    --button-hero-hover-from:hsl(192, 91%, 36%);   /* cyan-600 */
+    --button-hero-hover-to:hsl(271, 81%, 56%); /* purple-600 */
+    --button2-hero-border:hsl(0, 0%, 90%); /* white*/
+    --button2-hero-text:hsl(0, 0%, 100%);  /* white */
+    --button2-hero-hover:hsl(0, 0%, 70%); /* white */
+    --icon-background:hsl(0, 0%, 40%);
+    --icon-border:hsl(0, 0%, 80%);
+    /*SECCION PROYECTOS*/
+    /*Titulo y subtitulo*/
+    --title-text:hsl(218, 11%, 65%);
+    --card-background-from:hsl(0, 0%, 100%); /* white*/
+    --card-background-to:hsl(216, 12%, 84%); /* gray-300 */
+    --cards-background:hsl(0, 0%, 0%);
+    --cards-border:hsl(0, 0%, 10%);
+    --cards-border-hover:hsl(0, 0%, 80%);
+    --card-tittle:hsl(0, 0%, 100%); /* white*/
+    --card-group-hover:hsl(188, 86%, 53%); /* cyan-400 */
+    --card-description:hsl(218, 11%, 65%);
+    --cart-tech-background:(0, 0%, 10%);
+    --card-tech-text:(0, 0%, 100%);
+    --card-tech-color:(0, 0%, 0%);
+
+    /*CONTACTO*/
+    --contact-label:hsl(216, 12%, 84%); /* gray-300 */
+    --contact-placeholder-background:hsl(0, 0%, 5%);  
+    --contact-placeholder-text:hsl(220, 9%, 46%);; 
+    --contact-placeholder-focus:hsl(188, 86%, 53%); /* cyan-400 */
+    --contact-placeholder:hsl(220, 9%, 46%);    /* slate-900 */
+    --contact-border:hsl(0, 0%, 20%);
+    /*FOOTER*/
+    --footer-border:hsl(0, 0%, 10%);
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.5% 48%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground))
+  }
+}
