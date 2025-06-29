@@ -133,7 +133,7 @@ export function Hero({ activeProfile, setActiveProfile }: HeroProps) {
                 />
                 <div className="relative w-full h-full bg-gradient-to-br from-[var(--gradient-from-circle)] via-[var(--gradient-via-circle)] to-[var(--gradient-to-circle)] rounded-full flex items-center justify-center border-2 border-border transition-colors duration-300">
                   <span className="text-6xl font-bold text-foreground transition-colors duration-300">
-                    <img src="../../../public/images/perfil.jpeg" alt="perfil" className="w-80 h-80 rounded-full object-cover" />
+                    <img src="/Portfolio/images/perfil.jpeg" alt="perfil" className="w-80 h-80 rounded-full object-cover" />
                   </span>
                 </div>
               </div>
