@@ -93,6 +93,9 @@ export function Hero({ activeProfile, setActiveProfile }: HeroProps) {
               >
                 <Button
                   size="lg"
+                  onClick={() =>
+                    document.getElementById("proyectos")?.scrollIntoView({ behavior: "smooth" })
+                  }
                   className="bg-gradient-to-r from-[var(--button-hero-from)] to-[var(--button-hero-to)] hover:from-[var(--button-hero-hover-from)] hover:to-[var(--button-hero-hover-from)] text-white border-0 transition-colors duration-300"
                 >
                   Ver Proyectos
@@ -100,6 +103,9 @@ export function Hero({ activeProfile, setActiveProfile }: HeroProps) {
                 <Button
                   size="lg"
                   variant="outline"
+                  onClick={() =>
+                    document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })
+                  }
                   className="border-[var(--button2-hero-border)] text-[var(--button2-hero-text)] hover:bg-[var(--button2-hero-hover)] dark:border-white/20 dark:text-white dark:hover:bg-white/10 transition-colors duration-300"
                 >
                   Contactar

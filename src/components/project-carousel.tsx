@@ -27,9 +27,7 @@ export function ProjectCarousel({
   images,
   projectUrl,
   githubUrl,
-}: ProjectCarouselProps) {
-  console.log(isOpen);
-  
+}: ProjectCarouselProps) {  
   return (
     <AnimatePresence>
       {isOpen && (

@@ -59,11 +59,11 @@
 
     /*CONTACTO*/
     --contact-label:hsl(215, 19%, 35%); /* slate-600 */
-    --contact-placeholder-background:hsl(0, 0%, 50%);  
+    --contact-placeholder-background:hsl(0, 0%, 100%); 
     --contact-placeholder-text:hsl(222, 47%, 11%);    /* slate-900 */
     --contact-placeholder-focus:hsl(215, 16%, 47%);    /* slate-900 */
     --contact-placeholder:hsl(215, 20%, 65%);    /* slate-900 */
-    --contact-border:hsl(214, 32%, 91%); /* slate-200 */
+    --contact-border:hsl(0, 0%, 50%); /* slate-200 */
 
     /*FOOTER*/
     --footer-border:hsl(214, 32%, 91%); /* slate-200 */

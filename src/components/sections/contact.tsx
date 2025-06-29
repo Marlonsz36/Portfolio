@@ -61,10 +61,10 @@ export function Contact() {
   }
 
   return (
-    <section className="py-20 px-6">
-      <div className="container mx-auto max-w-2xl">
+    <section className="py-20 px-6" id="contacto">
+      <div className="container mx-auto max-w-2xl" ref={ref}>
         <motion.div
-          ref={ref}
+          
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="text-center mb-12"

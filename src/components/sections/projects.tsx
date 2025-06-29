@@ -33,10 +33,11 @@ export function Projects({ activeProfile, projects, onOpenCarousel }: ProjectsPr
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6" id="proyectos">
       <div className="container mx-auto">
+        <div ref={ref}>
         <motion.div
-          ref={ref}
+          
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,12 +53,12 @@ export function Projects({ activeProfile, projects, onOpenCarousel }: ProjectsPr
               : "Proyectos de análisis de datos y machine learning con resultados medibles"}
           </p>
         </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" ref={ref}>
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              ref={ref}
+   
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               whileInView={{ opacity: 1, y: 0 }}

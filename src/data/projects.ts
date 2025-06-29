@@ -4,7 +4,7 @@ export const projectsFrontend = [
     description:
       "Sistema de facturación multiusuario con generación de reportes y firma digital avanzada. Incluye dashboard administrativo, gestión de clientes y reportes en tiempo real.",
     technologies: ["Angular", "Tailwind", "Material Angular", "Sass"],
-    image: "/Portfolio/images/capturas/sfv3/img.PNG?height=300&width=400",
+    image: "/Portfolio/images/capturas/sfv3/img1.PNG?height=300&width=400",
     gradient: "from-purple-500 to-pink-500",
     production: false,
     productionLink:"",
@@ -127,28 +127,28 @@ export const projectsFrontend = [
     description:
       "Plataforma integral para la gestión, administración y seguimiento de pagarés empresariales.",
     technologies: ["React", "Node.js", "MUI", "Sass", "Express", "TypeScript"],
-    image: "/Portfolio/images/capturas/portalPagare/img.png?height=300&width=400",
+    image: "/Portfolio/images/capturas/portalPagare/img1.PNG?height=300&width=400",
     gradient: "from-indigo-500 to-purple-500",
     production: false,
     productionLink:"",
     images: [
       {
-        src: "/Portfolio/images/capturas/portalPagare/img2.png?height=600&width=800",
+        src: "/Portfolio/images/capturas/portalPagare/img2.PNG?height=600&width=800",
         alt: "Portal de pagarés",
         caption: "Dashboard principal del portal",
       },
       {
-        src: "/Portfolio/images/capturas/portalPagare/img3.png?height=600&width=800",
+        src: "/Portfolio/images/capturas/portalPagare/img3.PNG?height=600&width=800",
         alt: "Aprobación de pagarés",
         caption: "Aprobación de pagarés por lotes",
       },
       {
-        src: "/Portfolio/images/capturas/portalPagare/img4.png?height=600&width=800",
+        src: "/Portfolio/images/capturas/portalPagare/img4.PNG?height=600&width=800",
         alt: "Consulta de estado de pagarés",
         caption: "Consulta de estado de pagarés",
       },
       {
-        src: "/Portfolio/images/capturas/portalPagare/img5.png?height=600&width=800",
+        src: "/Portfolio/images/capturas/portalPagare/img5.PNG?height=600&width=800",
         alt: "Reportes",
         caption: "Reportes generales y de auditoría",
       },

@@ -17,7 +17,6 @@ export default function Portfolio() {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false)
 
   const openProjectCarousel = (project: any) => {
-    console.log("Opening project carousel for:", project.title)
     setSelectedProject(project)
     setIsCarouselOpen(true)
   }
