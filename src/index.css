@@ -147,7 +147,7 @@
     /*CONTACTO*/
     --contact-label:hsl(216, 12%, 84%); /* gray-300 */
     --contact-placeholder-background:hsl(0, 0%, 5%);  
-    --contact-placeholder-text:hsl(220, 9%, 46%);; 
+    --contact-placeholder-text:hsl(220, 9%, 46%); 
     --contact-placeholder-focus:hsl(188, 86%, 53%); /* cyan-400 */
     --contact-placeholder:hsl(220, 9%, 46%);    /* slate-900 */
     --contact-border:hsl(0, 0%, 20%);
